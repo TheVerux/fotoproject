@@ -1,81 +1,109 @@
 <div class="container">
   <h1>Rubitschung</h1>
 
-
   <app-photo-grid title="Photos">
     <app-photo-card
       image="/assets/img/photos/gion/1_edited.jpg"
-      before="/assets/img/photos/gion/1.jpg">
-
+      before="/assets/img/photos/gion/1.jpg"
+    >
       <app-photo-details
         iso="100"
         focalLength="4.8"
         aperture="2.8"
-        shutterSpeed="1/500">
+        shutterSpeed="1/250"
+      >
       </app-photo-details>
-
-
-      Lorem ipsum
+      <p>
+        Ich finde das Bild gelungen, das Objekt sticht heraus und ist nicht im
+        Zentrum des Fotos. Was besser sein könnte, wäre die Perspektive. Etwas
+        mehr Himmel wäre nicht schlecht und die Hauswand mit dem Grafiti ist
+        etwas zu nah und ist dementsprechend zu scharf.
+      </p>
     </app-photo-card>
     <app-photo-card
       image="/assets/img/photos/gion/2_edited.jpg"
-      before="/assets/img/photos/gion/2.jpg">
+      before="/assets/img/photos/gion/2.jpg"
+    >
       <app-photo-details
-        iso="100"
-        focalLength="4.8"
+        iso="80"
+        focalLength="3.6"
         aperture="2.8"
-        shutterSpeed="1/10000">
+        shutterSpeed="1/1000"
+      >
       </app-photo-details>
-
-      Lorem ipsum
+      <p>
+        Dieses Foto ist mein Favorit. Das Objekt sticht sofort ins Auge und ist
+        hat eine sehr gute Distanz zum Hintergrund. Es setzt sich klar davon ab
+        und weitere Objekte im Hintergrund sind verschwommen. Ein Pfosten im
+        Bild dient als gutes Gegengewicht. Das Objekt wurde aus einer
+        Perspektive aufgenommen, wo nicht zu einnehmend ist. Der Himmel ist gut
+        Sichtbar, nimmt jedoch nicht zu viel vom Bild ein.
+      </p>
     </app-photo-card>
     <app-photo-card
       image="/assets/img/photos/gion/3_edited.jpg"
-      before="/assets/img/photos/gion/3.jpg">
+      before="/assets/img/photos/gion/3.jpg"
+    >
       <app-photo-details
-        iso="100"
-        focalLength="4.8"
+        iso="80"
+        focalLength="3.6"
         aperture="2.8"
-        shutterSpeed="1/250">
+        shutterSpeed="1/1250"
+      >
       </app-photo-details>
-
-      Lorem ipsum
+      <p>
+        Das original Bild ist etwas zu dunkel. Durch die Bearbeitung wurde dem
+        entgegen gewirkt. Das Objekt sticht heraus und hebt sich klar vom
+        Hintergrund ab. Das bearbeitete Foto wirkt noch etwas milchig. Die
+        Farblichen Kontraste sind in meinen Augen nicht genügend Balanciert. Im
+        Bild gibt es zu viel blaue und graue Töne, was es dem Objekt etwas
+        erschwert heraus zu stechen. Da der Hintergrund jedoch genügend
+        verschwommen ist, sticht das Objekt trotzdem heraus.
+      </p>
     </app-photo-card>
   </app-photo-grid>
 
   <ng-container *ngIf="!featured">
+    <app-photo-grid title="Pirsch 1">
+      <app-photo-card image="/assets/img/pirsch1/gion/1.jpg" alt="Bild 1">
+        Ein Wasserhahn der Firma Nussbaum. Angehängt am Gebäude der Technischen
+        Hochschule der GIBB. Der Wasserhahn nimmt den Grossteil des Bildes ein
+        und dementsprechend ist dieser gut erkennbar.
+      </app-photo-card>
 
-  <app-photo-grid title="Pirsch 1">
+      <app-photo-card image="/assets/img/pirsch1/gion/2.jpg" alt="Bild 2">
+        Ein Aschenbecher. Hängt an einer Wand auf dem GIBB Gelände auf dem Weg.
+        Der Fokus liegt klar auf dem Aschenbecher. Dieser ist zentral im Bild zu
+        erkennen. Er wurde aus einer eher tieger gelegenen Perspektive
+        aufgenommen, um so dem Anschauer des Bildes ein komplexes Bild zu
+        bieten.
+      </app-photo-card>
 
-    <app-photo-card image="/assets/img/pirsch1/gion/1.jpg" alt="Bild 1">
-      Ein Wasserhahn der Firma Nussbaum. Angehängt am Gebäude der Technischen Hochschule der GIBB. Der Wasserhahn nimmt den Grossteil des Bildes ein und dementsprechend ist dieser gut erkennbar.
-    </app-photo-card>
+      <app-photo-card image="/assets/img/pirsch1/gion/3.jpg" alt="Bild 3">
+        Auf dem Bild ist eine grüne Bank zu sehen, welche grösstenteils im Fokus
+        steht. Auf der Bank findet man Schnee, welcher gerade am schmelzen ist.
+        Die Bank wurde auf deren Höhe aufgenommen, so erhält der Betrachter eine
+        neue Perspektive für die Bank.
+      </app-photo-card>
+    </app-photo-grid>
 
-    <app-photo-card image="/assets/img/pirsch1/gion/2.jpg" alt="Bild 2">
-      Ein Aschenbecher. Hängt an einer Wand auf dem GIBB Gelände auf dem Weg. Der Fokus liegt klar auf dem Aschenbecher. Dieser ist zentral im Bild zu erkennen. Er wurde aus einer eher tieger gelegenen Perspektive aufgenommen, um so dem Anschauer des Bildes ein komplexes Bild zu bieten.
-    </app-photo-card>
+    <app-photo-grid title="Pirsch 3">
+      <app-photo-card image="/assets/img/pirsch3/gion/1.jpg" alt="Bild 1">
+        Das Objekt ist ein Pfosten vor dem BMS Gebäude der GIBB. Es zieht den
+        Fokus zentral auf sich und der Hintergrund ist leicht verschwommen
+      </app-photo-card>
 
-    <app-photo-card image="/assets/img/pirsch1/gion/3.jpg" alt="Bild 3">
-      Auf dem Bild ist eine grüne Bank zu sehen, welche grösstenteils im Fokus steht. Auf der Bank findet man Schnee, welcher gerade am schmelzen ist. Die Bank wurde auf deren Höhe aufgenommen, so erhält der Betrachter eine neue Perspektive für die Bank.
-    </app-photo-card>
-  </app-photo-grid>
+      <app-photo-card image="/assets/img/pirsch3/gion/2.jpg" alt="Bild 2">
+        Ein Mülleimer auf dem kleinen Park vor dem GIBB Areal. Das Objekt ist
+        sehr prominent im Zentrum und zieht den Fokus auf sich. Der Hintergrund
+        ist leicht verschwommen.
+      </app-photo-card>
 
-  <app-photo-grid title="Pirsch 3">
-
-    <app-photo-card image="/assets/img/pirsch3/gion/1.jpg" alt="Bild 1">
-      Das Objekt ist ein Pfosten vor dem BMS Gebäude der GIBB. Es zieht den Fokus zentral auf sich und der Hintergrund ist leicht verschwommen
-    </app-photo-card>
-
-    <app-photo-card image="/assets/img/pirsch3/gion/2.jpg" alt="Bild 2">
-      Ein Mülleimer auf dem kleinen Park vor dem GIBB Areal. Das Objekt ist sehr prominent im Zentrum und zieht den Fokus auf sich. Der Hintergrund ist leicht verschwommen.
-    </app-photo-card>
-
-    <app-photo-card image="/assets/img/pirsch3/gion/3.jpg" alt="Bild 3">
-      Ein Buch Kasten in der Nähe der Mensa1 der GIBB. Das Foto wurde mit einer gewissen Distanz aufgenommen, das Objekt ist jedoch nachwievor Zentral auf dem Bild. Der Hintergrund ist kaum verschwommen.
-    </app-photo-card>
-
-  </app-photo-grid>
-
+      <app-photo-card image="/assets/img/pirsch3/gion/3.jpg" alt="Bild 3">
+        Ein Buch Kasten in der Nähe der Mensa1 der GIBB. Das Foto wurde mit
+        einer gewissen Distanz aufgenommen, das Objekt ist jedoch nachwievor
+        Zentral auf dem Bild. Der Hintergrund ist kaum verschwommen.
+      </app-photo-card>
+    </app-photo-grid>
   </ng-container>
 </div>
-
