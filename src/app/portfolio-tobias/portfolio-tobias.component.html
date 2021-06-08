@@ -1,0 +1,115 @@
+<div class="container">
+  <h1>Zaugg</h1>
+
+  <app-photo-grid title="Photos">
+    <app-photo-card
+      image="/assets/img/photos/tobias/1_edited.jpg"
+      before="/assets/img/photos/tobias/1.jpg"
+    >
+      <app-photo-details
+        iso="80"
+        focalLength="10.4"
+        aperture="8.0"
+        shutterSpeed="1/100"
+      >
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+    <app-photo-card
+      image="/assets/img/photos/tobias/2_edited.jpg"
+      before="/assets/img/photos/tobias/2.jpg"
+    >
+      <app-photo-details
+        iso="80"
+        focalLength="9.5"
+        aperture="3.9"
+        shutterSpeed="1/100"
+      >
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+    <app-photo-card
+      image="/assets/img/photos/tobias/3_edited.jpg"
+      before="/assets/img/photos/tobias/3.jpg"
+    >
+      <app-photo-details
+        iso="80"
+        focalLength="11.3"
+        aperture="4.2"
+        shutterSpeed="1/640"
+      >
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+  </app-photo-grid>
+
+  <ng-container *ngIf="!featured">
+    <app-photo-grid title="Pirsch 1">
+      <app-photo-card image="/assets/img/pirsch1/tobias/1.jpg" alt="Bild 1">
+        Hier habe ich die Beschreibung eines Baums fotografiert, die man
+        normalerweise kaum lesen kann. Leider ist das Bild etwas unscharf
+        geworden. Das Objekt ist zwar klar erkennbar, doch da es eine
+        zweidimensionale Fläche ist, ist es nicht ganz so interessant zum
+        anschauen.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch1/tobias/2.jpg" alt="Bild 2">
+        Dieses Windmessgerät ist weit oben angebracht und wurde bei sehr
+        speziellen Lichtverhältnissen fotografiert. Die Farben schauen somit
+        fast grau aus.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch1/tobias/3.jpg" alt="Bild 3">
+        Diese Lampe ist sehr speziell, da die Glühbirne einfach so an der Wand
+        angebracht wurde. Das Objekt nimmt hier den grössten Teil des Bildes
+        ein.
+      </app-photo-card>
+    </app-photo-grid>
+
+    <app-photo-grid title="Pirsch 2">
+      <app-photo-card image="/assets/img/pirsch2/tobias/1.jpg" alt="Bild 1">
+        Hier habe ein sehr kleines Objekt sehr gross dargestellt. Es ist ganz
+        links im Bild, doch als Gegengewicht habe ich den grossen Turm im
+        Hintergrund, der noch knapp erkennbar ist.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch2/tobias/2.jpg" alt="Bild 2">
+        Hier habe ich ein Metallstück im Zaun fotografiert, auch wieder ganz auf
+        der linken Seite. Als Gegengewicht habe ich hier zwei Bäume, die aber
+        fast nur noch als weisse Striche zu erkennen sind. Es ist aber ein
+        bisschen schwierig für das Auge, wenn es dem Muster des Zauns folgt, das
+        immer unschärfer wird.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch2/tobias/3.jpg" alt="Bild 3">
+        Das Objekt sieht hier sehr viel grösser aus, als es tatsächlich ist, man
+        könnte es fast mit einem grossen Turm verwechseln. Leider ist das
+        Gegengewicht, die "Infosäule", hier im Hintergrund zu klein.
+      </app-photo-card>
+    </app-photo-grid>
+
+    <app-photo-grid title="Pirsch 3">
+      <app-photo-card image="/assets/img/pirsch3/tobias/1.jpg" alt="Bild 1">
+        Das ist eigentlich ein spannendes Objkt, da dahinter noch einmal genau
+        dasselbe "x" ist, doch leider ist der gesamte Hintergrund auch scharf.
+        Ausserdem ist das Objekt leider in der Mitte des Bildes.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch3/tobias/2.jpg" alt="Bild 2">
+        Auch hier ist der Hintergrund leider nicht unscharf geworden und das
+        Objekt ist fast in der Mitte. Ansonsten ist es aber recht gut gekommen
+        und hätte mit dem Baum auch ein Gegengewicht.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch3/tobias/3.jpg" alt="Bild 3">
+        Hier ist es mir ein bisschen besser gelungen, den Hintergrund unscharf
+        zu bekommen. Doch auch hier ist das Objekt in der Mitte. Wenn es ein
+        bisschen verschoben gewesen wäre, wäre der Busch im Hintergrund aber ein
+        gutes Gegengewicht.
+      </app-photo-card>
+    </app-photo-grid>
+  </ng-container>
+</div>

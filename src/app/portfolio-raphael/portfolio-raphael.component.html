@@ -1,0 +1,110 @@
+<div class="container">
+  <h1>Gosteli</h1>
+
+  <app-photo-grid title="Photos">
+    <app-photo-card
+      image="/assets/img/photos/raphael/1_edited.jpg"
+      before="/assets/img/photos/raphael/1.jpg">
+
+      <app-photo-details
+        iso="100"
+        focalLength="4.8"
+        aperture="2.8"
+        shutterSpeed="1/500">
+      </app-photo-details>
+
+
+      Lorem ipsum
+    </app-photo-card>
+    <app-photo-card
+      image="/assets/img/photos/raphael/2_edited.jpg"
+      before="/assets/img/photos/raphael/2.jpg">
+      <app-photo-details
+        iso="100"
+        focalLength="4.8"
+        aperture="2.8"
+        shutterSpeed="1/10000">
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+    <app-photo-card
+      image="/assets/img/photos/raphael/3_edited.jpg"
+      before="/assets/img/photos/raphael/3.jpg">
+      <app-photo-details
+        iso="100"
+        focalLength="4.8"
+        aperture="2.8"
+        shutterSpeed="1/250">
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+  </app-photo-grid>
+
+
+  <ng-container *ngIf="!featured">
+    <app-photo-grid title="Pirsch 1">
+
+      <app-photo-card image="/assets/img/pirsch1/raphael/1.jpg" alt="Bild 1">
+        Der Hydrant wird in einer unüblichen Perspektive und Kontrast zum Hintergrund gezeigt.
+        Das Objekt wirkt auf dem Foto fremd und kalt.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch1/raphael/2.jpg" alt="Bild 2">
+        Auch dieses Foto zeigt eine eher seltene Perspektive eines Türgriffs.
+        Das Objekt verschmilzt jedoch strak mit dem Hintergrund.
+      </app-photo-card>
+
+
+      <app-photo-card image="/assets/img/pirsch1/raphael/3.jpg" alt="Bild 3">
+        Das Objekt ist gut ersichtlich und klar, dennoch ist das
+        Bild aufgrund des wirren Hintergrunds nicht sehr harmonisch.
+      </app-photo-card>
+    </app-photo-grid>
+
+    <app-photo-grid title="Pirsch 2">
+
+      <app-photo-card image="/assets/img/pirsch2/raphael/1.jpg" alt="Bild 1">
+        Mit diesem Foto habe ich versucht einen Baum als "Gegengeweicht" für
+        eine eher kleine Konstruktion zu verwenden. Das Gegengewicht wird aber
+        durch den hellen Hintergrund überbelendet und verliert dadurch die Wirkung.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch2/raphael/2.jpg" alt="Bild 2">
+        Auf diesem Foto bin ich mit den Farben sehr zufrieden, jedoch ist
+        unklar welches Objekt im Fokus liegt und welches als Gegenstück dient.
+        Für die Balance habe ich versucht einen Hintergrund zu finden,
+        welcher die Farben des Objektes aufnimmt.
+      </app-photo-card>
+
+
+      <app-photo-card image="/assets/img/pirsch2/raphael/3.jpg" alt="Bild 3">
+        In diesem Foto ist mir der verschwommene Hintergrund gut gelungen und
+        das Objekt hebt sich vom Hintergrund ab. Die Balance zwischen dem Objekt
+        und der Tafel – Grün zu Rot – ist aber nicht genügend gut ersichtlich.
+      </app-photo-card>
+    </app-photo-grid>
+
+    <app-photo-grid title="Pirsch 3">
+
+      <app-photo-card image="/assets/img/pirsch3/raphael/1.jpg" alt="Bild 1">
+        Auf dem Photo gibt ist nicht genügend gut ersichtlich um welches Objekt es sich handelt. Problematisch ist auch
+        die fehlende Hintergrundunschärfe welcher mir mit den Blendeneinstellung nicht gelungen ist.
+      </app-photo-card>
+
+      <app-photo-card image="/assets/img/pirsch3/raphael/2.jpg" alt="Bild 2">
+        Der Hintergrund und die Positionierung ist mir auf diesem Bild nicht gelungen. Jedoch hat die gewählte
+        Perspektive noch potential für
+        die nächste Pirsch.
+      </app-photo-card>
+
+
+      <app-photo-card image="/assets/img/pirsch3/raphael/3.jpg" alt="Bild 3">
+        Die Positionierung des Objektes ist mir auf diesem Bild gut gelungen, jedoch ist auch hier der Hintergrund nicht
+        gelungen.
+      </app-photo-card>
+    </app-photo-grid>
+  </ng-container>
+</div>
+

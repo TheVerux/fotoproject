@@ -1,0 +1,95 @@
+<div class="container">
+  <h1>Schönthal</h1>
+
+  <app-photo-grid title="Photos">
+    <app-photo-card
+      image="/assets/img/photos/noah/1_edited.jpg"
+      before="/assets/img/photos/noah/1.jpg">
+
+      <app-photo-details
+        iso="100"
+        focalLength="4.8"
+        aperture="2.8"
+        shutterSpeed="1/500">
+      </app-photo-details>
+
+
+      Lorem ipsum
+    </app-photo-card>
+    <app-photo-card
+      image="/assets/img/photos/noah/2_edited.jpg"
+      before="/assets/img/photos/noah/2.jpg">
+      <app-photo-details
+        iso="100"
+        focalLength="4.8"
+        aperture="2.8"
+        shutterSpeed="1/10000">
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+    <app-photo-card
+      image="/assets/img/photos/noah/3_edited.jpg"
+      before="/assets/img/photos/noah/3.jpg">
+      <app-photo-details
+        iso="100"
+        focalLength="4.8"
+        aperture="2.8"
+        shutterSpeed="1/250">
+      </app-photo-details>
+
+      Lorem ipsum
+    </app-photo-card>
+  </app-photo-grid>
+
+  <ng-container *ngIf="!featured">
+
+  <app-photo-grid title="Pirsch 1">
+
+    <app-photo-card image="/assets/img/pirsch1/noah/1.jpg" alt="Bild 1">
+      Das Objekt ist unser Schild, den Fokus auf sich zieht mit einem unscharfen hintergrund aus braunen Blättern.
+    </app-photo-card>
+
+    <app-photo-card image="/assets/img/pirsch1/noah/2.jpg" alt="Bild 2">
+      Das Dach der Holztafel wird als Fokus genutzt. Der Hintergrund beinhaltet ein Schulgebäude.
+    </app-photo-card>
+
+
+    <app-photo-card image="/assets/img/pirsch1/noah/3.jpg" alt="Bild 3">
+      Das Strassenschild steht vor einem schönen Hintergrund welcher ein rosan beiges Haus beinhaltet.
+    </app-photo-card>
+  </app-photo-grid>
+
+  <app-photo-grid title="Pirsch 2">
+
+    <app-photo-card image="/assets/img/pirsch2/noah/1.jpg" alt="Bild 1">
+      Der Knoten hat einen deutlichen Fokus durch das bissige Rot welches unser Bild prägt. Unser Hintergrund wird mit einem Baum seitlich dargestellt.
+    </app-photo-card>
+
+    <app-photo-card image="/assets/img/pirsch2/noah/2.jpg" alt="Bild 2">
+      Der Zaunhut, wird neben einem schönen Baumstamm dargestellt, er beinhaltet ein zartes Braun.
+    </app-photo-card>
+
+    <app-photo-card image="/assets/img/pirsch2/noah/3.jpg" alt="Bild 3">
+      Das Graffiti im Hintergrund deutet auf ein schönes Rot hin welches die Sprechanlage im Vordergrund hervorhebt.
+    </app-photo-card>
+  </app-photo-grid>
+
+  <app-photo-grid title="Pirsch 3">
+
+    <app-photo-card image="/assets/img/pirsch3/noah/1.jpg" alt="Bild 1">
+    Die Fahrräder werden nicht alle fokussiert, wir haben jedoch im Hintergrund ein Graffiti welches das Bild zum leuchten hervorhebt.
+    </app-photo-card>
+
+    <app-photo-card image="/assets/img/pirsch3/noah/2.jpg" alt="Bild 2">
+    Der verrostete Griff repräsentiert ein altes Objekt welches der Witterung ausgesetzt ist. Der Hintergrund wird mit dem Inhalt einer Quartiersstrasse verschwommen dargestellt.
+    </app-photo-card>
+
+    <app-photo-card image="/assets/img/pirsch3/noah/3.jpg" alt="Bild 3">
+    Das Schild beschreibt den verschwommen Hintergrund welcher durch das Schild noch einen weiteren Ausdruck bekommt.
+    </app-photo-card>
+  </app-photo-grid>
+
+  </ng-container>
+</div>
+
