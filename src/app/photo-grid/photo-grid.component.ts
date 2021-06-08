@@ -10,6 +10,9 @@ export class PhotoGridComponent implements OnInit {
   @Input()
   title: string;
 
+  @Input()
+  featured = false;
+
   constructor() {
   }
 
