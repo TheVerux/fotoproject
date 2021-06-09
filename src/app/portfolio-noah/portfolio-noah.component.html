@@ -1,44 +1,41 @@
 <div class="container">
   <h1>Schönthal</h1>
 
-  <app-photo-grid [featured]="featured" title="Photos">
+  <app-photo-grid title="Photos">
     <app-photo-card
       image="/assets/img/photos/noah/1_edited.jpg"
       before="/assets/img/photos/noah/1.jpg">
+      <app-photo-detailsd
+        iso="80"
+        focalLength="9.5"
+        aperture="8.0"
+        shutterSpeed="1/80">
+      </app-ddd-details>
 
-      <app-photo-details
-        iso="100"
-        focalLength="4.8"
-        aperture="2.8"
-        shutterSpeed="1/500">
-      </app-photo-details>
-
-
-      Lorem ipsum
+      Der Baumstamm im Hintergrund stellt einen klaren und offensichtlichen unscharfen Hintergrund dar. Dieser wird durch den Zaunkopf unser Objekt in ein gutes Verhältnis gestellt.
     </app-photo-card>
     <app-photo-card
       image="/assets/img/photos/noah/2_edited.jpg"
-      before="/assets/img/photos/noah/2.jpg">
+      before="ddd/assets/img/photos/noah/2.jpg">
       <app-photo-details
-        iso="100"
-        focalLength="4.8"
-        aperture="2.8"
-        shutterSpeed="1/10000">
+      iso="80"
+      focalLength="10.4"
+      aperture="8.0"
+      shutterSpeed="1/80">
       </app-photo-details>
 
-      Lorem ipsum
-    </app-photo-card>
+      Das Objekt, in diesem Fall die Zaunkralle, kombiniert mit den Grashalmen ergibt ein schönes Bild welches mit den Bäumen und dem Graffiti in Verbindung gebracht werden kann.    </app-photo-card>
     <app-photo-card
       image="/assets/img/photos/noah/3_edited.jpg"
       before="/assets/img/photos/noah/3.jpg">
       <app-photo-details
-        iso="100"
-        focalLength="4.8"
-        aperture="2.8"
-        shutterSpeed="1/250">
+      iso="80"
+      focalLength="9"
+      aperture="3.9"
+      shutterSpeed="1/800">
       </app-photo-details>
 
-      Lorem ipsum
+      Das Scharnier ist in unserem Fall das Objekt welches in einem schönen Kontrast mit dem Hintergrund, Gibb steht. Das Gebäude wird edel mit einem Touch von Unschärfe gekennzeichnet.
     </app-photo-card>
   </app-photo-grid>
 
