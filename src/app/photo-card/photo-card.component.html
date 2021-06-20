@@ -1,18 +1,20 @@
-<div class="card p-0 mt-5 mr-15 ml-0 h-full">
-  <ng-container *ngIf="before">
-    <img-comparison-slider>
-      <img slot="before" height="auto" width="100%" [src]="before" [alt]="alt" />
-      <img slot="after" height="auto" width="100%" [src]="image" [alt]="alt" />
-    </img-comparison-slider>
-  </ng-container>
+<div class="col col-md h-full">
+  <div class="card p-0 mt-5 mr-15 ml-0 h-full">
+    <ng-container *ngIf="before">
+      <img-comparison-slider>
+        <img slot="before" height="auto" width="100%" [src]="before" [alt]="alt"/>
+        <img slot="after" height="auto" width="100%" [src]="image" [alt]="alt"/>
+      </img-comparison-slider>
+    </ng-container>
 
-  <ng-container *ngIf="before === undefined">
-    <img class="img-fluid rounded-top" [src]="image" [alt]="alt">
-  </ng-container>
+    <ng-container *ngIf="before === undefined">
+      <img class="img-fluid rounded-top" [src]="image" [alt]="alt">
+    </ng-container>
 
-  <div class="content">
-    <p class="text-muted">
-      <ng-content></ng-content>
-    </p>
+    <div class="content">
+      <p class="text-muted">
+        <ng-content></ng-content>
+      </p>
+    </div>
   </div>
 </div>

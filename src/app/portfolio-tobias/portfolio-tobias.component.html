@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Zaugg</h1>
+  <h1 *ngIf="!featured">Tobias Zaugg</h1>
 
   <app-photo-grid [featured]="featured" title="Photos">
     <app-photo-card
@@ -126,5 +126,7 @@
         gutes Gegengewicht.
       </app-photo-card>
     </app-photo-grid>
+
+    <app-portfolio-files name="tobias"></app-portfolio-files>
   </ng-container>
 </div>

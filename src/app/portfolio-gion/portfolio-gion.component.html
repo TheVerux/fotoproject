@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Rubitschung</h1>
+  <h1 *ngIf="!featured">Gion ubitschung</h1>
 
   <app-photo-grid [featured]="featured" title="Photos">
     <app-photo-card
@@ -105,5 +105,7 @@
         Zentral auf dem Bild. Der Hintergrund ist kaum verschwommen.
       </app-photo-card>
     </app-photo-grid>
+
+    <app-portfolio-files name="gion"></app-portfolio-files>
   </ng-container>
 </div>

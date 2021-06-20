@@ -5,11 +5,16 @@ import {PortfolioTobiasComponent} from './portfolio-tobias/portfolio-tobias.comp
 import {PortfolioGionComponent} from './portfolio-gion/portfolio-gion.component';
 import {PortfolioNoahComponent} from './portfolio-noah/portfolio-noah.component';
 import {PortfolioRaphaelComponent} from './portfolio-raphael/portfolio-raphael.component';
+import {PortfolioOverviewComponent} from './portfolio-overview/portfolio-overview.component';
 
 const routes: Routes = [
   {
     path: '',
     component: PortfolioComponent
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioOverviewComponent
   },
   {
     path: 'portfolio/tobias',

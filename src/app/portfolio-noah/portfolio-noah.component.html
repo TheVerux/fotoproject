@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Schönthal</h1>
+  <h1 *ngIf="!featured">Noah Schönthal</h1>
 
   <app-photo-grid title="Photos">
     <app-photo-card
@@ -87,6 +87,7 @@
     </app-photo-card>
   </app-photo-grid>
 
+    <app-portfolio-files name="noah"></app-portfolio-files>
   </ng-container>
 </div>
 

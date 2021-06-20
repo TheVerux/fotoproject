@@ -1,18 +1,49 @@
-<div style="margin-bottom: 6em">
-  <app-portfolio-gion [featured]="true"></app-portfolio-gion>
-</div>
+<div>
+  <div>
+    <h1>Fotos</h1>
 
-<div style="margin-bottom: 6em">
-  <app-portfolio-noah [featured]="true"></app-portfolio-noah>
-</div>
+    <h2>Gion Rubitschung</h2>
+    <div style="margin-bottom: 6em">
+      <app-portfolio-gion [featured]="true"></app-portfolio-gion>
+    </div>
 
-<div style="margin-bottom: 6em">
-  <app-portfolio-tobias [featured]="true"></app-portfolio-tobias>
-</div>
+    <h2>Noah Schönthal</h2>
+    <div style="margin-bottom: 6em">
+      <app-portfolio-noah [featured]="true"></app-portfolio-noah>
+    </div>
 
-<div style="margin-bottom: 6em">
-  <app-portfolio-raphael [featured]="true"></app-portfolio-raphael>
-</div>
+    <h2>Tobias Zaugg</h2>
+    <div style="margin-bottom: 6em">
+      <app-portfolio-tobias [featured]="true"></app-portfolio-tobias>
+    </div>
 
+    <h2>Raphael Gosteli</h2>
+    <div style="margin-bottom: 6em">
+      <app-portfolio-raphael [featured]="true"></app-portfolio-raphael>
+    </div>
+  </div>
+
+  <div>
+    <h1>Filme</h1>
+
+    <div class="container-fluid">
+      <div class="row row-gap">
+        <div class="col-sm">
+          <h2>Film: Der Logarithmus</h2>
+          <iframe width="480" height="270" src="https://www.youtube.com/embed/zXJFe_zozCM" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+          <a style="display: block" routerLink="/portfolio" fragment="drehbuch">Drehbuch anzeigen →</a>
+        </div>
+        <div class="col-sm">
+          <h2>Livestream: ISS Earth Viewing Project</h2>
+          <iframe width="480" height="270" src="https://www.ustream.tv/embed/17074538" scrolling="no" allowfullscreen
+                  webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div style="height: 80px"></div>

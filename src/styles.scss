@@ -9,3 +9,30 @@ $material-icons-font-path: '~material-icons/iconfont/';
   margin: 0;
 }
 
+
+/*.dark-mode .nav-link {
+  color: var(--dm-navbar-link-text-color);
+  background-color: var(--dm-navbar-link-bg-color) !important;
+}*/
+
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.1em;
+}
+
+@media (max-width: 577px) {
+  .app-container {
+    padding-left: var(--navbar-horizontal-padding);
+    padding-right: var(--navbar-horizontal-padding);
+  }
+}
+
+
+.row-gap {
+  gap: 16px;
+}

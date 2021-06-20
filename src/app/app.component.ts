@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
+import {faAngleDown, faArrowDown, faLightbulb} from '@fortawesome/free-solid-svg-icons';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,12 @@ import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
 export class AppComponent implements OnInit {
   title = 'm152';
   faLight = faLightbulb;
+  faArrowDown = faAngleDown;
   darkmode = false;
+
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     if (localStorage.getItem('darkmode')) {
@@ -28,5 +34,9 @@ export class AppComponent implements OnInit {
     } else {
       localStorage.removeItem('darkmode');
     }
+  }
+
+  isActive(route: string, exact: boolean): boolean {
+    return this.router.isActive(route, exact);
   }
 }

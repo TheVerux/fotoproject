@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Gosteli</h1>
+  <h1 *ngIf="!featured">Raphael Gosteli</h1>
 
   <app-photo-grid [featured]="featured" title="Photos">
     <app-photo-card
@@ -105,6 +105,8 @@
         gelungen.
       </app-photo-card>
     </app-photo-grid>
+
+    <app-portfolio-files name="raphael"></app-portfolio-files>
   </ng-container>
 </div>
 
