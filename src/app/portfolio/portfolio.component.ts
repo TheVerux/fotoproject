@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent implements OnInit {
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
+  playStream(livestream: HTMLIFrameElement): void {
+    const playButton = livestream.querySelector('.clickContainer');
+    if (playButton instanceof HTMLButtonElement) {
+      playButton.click();
+    }
+  }
 }
