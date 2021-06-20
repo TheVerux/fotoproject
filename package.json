@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npm run build --prod && echo \"put -r dist/m152/* /srv/vhosts/inf-152-18h-ff.iet-gibb.net/httpdocs/\" | sftp inf-152-18h-ff@inf-152-18h-ff.iet-gibb.net"
+    "deploy": "npm run build -- --prod && echo \"put -r dist/m152/* /srv/vhosts/inf-152-18h-ff.iet-gibb.net/httpdocs/\" | sftp inf-152-18h-ff@inf-152-18h-ff.iet-gibb.net"
   },
   "private": true,
   "dependencies": {
